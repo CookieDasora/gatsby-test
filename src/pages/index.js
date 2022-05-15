@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Helmet } from 'react-helmet';
+import logo from '../images/icon.png';
 
 const IndexPage = () => {
   return (
@@ -12,6 +13,7 @@ const IndexPage = () => {
         <meta content="Simple App" property="og:title" />
         <meta content="Esse e um simples site feito apenas para testar o Gatsby" property="og:description" />
         <meta content="https://gatsbytestmaster72217.gatsbyjs.io/" property="og:url" />
+        <meta content={logo} property="og:image" />
         <meta content="#4F46E5" data-react-helmet="true" name="theme-color" />
       </Helmet>
       <div className="bg-indigo-600 rounded-xl">
