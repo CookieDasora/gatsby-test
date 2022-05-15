@@ -1,9 +1,19 @@
 import * as React from "react"
+import { Helmet } from 'react-helmet';
 
 const IndexPage = () => {
   return (
     <main className="flex justify-center items-center h-screen">
-      <title>Home - Simple App</title>
+      <Helmet>
+        <title>Home - Simple App</title>
+        <meta charSet="utf-8"/>
+        <meta name="author" content="Cookie" />
+        <meta name="description" content="Esse e um simples site feito apenas para testar o Gatsby"/>
+        <meta content="Simple App" property="og:title" />
+        <meta content="Esse e um simples site feito apenas para testar o Gatsby" property="og:description" />
+        <meta content="https://gatsbytestmaster72217.gatsbyjs.io/" property="og:url" />
+        <meta content="#4F46E5" data-react-helmet="true" name="theme-color" />
+      </Helmet>
       <div className="bg-indigo-600 rounded-xl">
         <h1 className="font-bold text-left font-medium text-white m-8 text-3xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
           Hello world from Gatsby!
